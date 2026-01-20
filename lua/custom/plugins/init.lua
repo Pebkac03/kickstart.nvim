@@ -5,7 +5,7 @@
 return {
 
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
-  'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+  'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
 
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
@@ -60,6 +60,7 @@ return {
   require 'custom.plugins.telescope',
   require 'custom.plugins.dart-vim-plugin',
   require 'custom.plugins.flutter-tools',
+  require 'custom.plugins.vim-fugitive',
   -- LSP Plugins
   {
     -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
@@ -75,7 +76,7 @@ return {
   },
   require 'custom.plugins.lsp-config',
   require 'custom.plugins.conform',
-  require 'custom.plugins.nvim-cmp',
+  require 'custom.plugins.blink',
 
   -- This is the selected colorscheme, change to the path of the luafile for the colorscheme you want to use.
   require 'custom.colorschemes.tokyonight',
