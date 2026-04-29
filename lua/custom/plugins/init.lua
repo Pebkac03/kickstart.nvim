@@ -58,25 +58,16 @@ return {
 
   require 'custom.plugins.which-key',
   require 'custom.plugins.telescope',
-  require 'custom.plugins.dart-vim-plugin',
+  -- require 'custom.plugins.dart-vim-plugin',
   require 'custom.plugins.flutter-tools',
   require 'custom.plugins.vim-fugitive',
   -- LSP Plugins
-  {
-    -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
-    -- used for completion, annotations and signatures of Neovim apis
-    'folke/lazydev.nvim',
-    ft = 'lua',
-    opts = {
-      library = {
-        -- Load luvit types when the `vim.uv` word is found
-        { path = '${3rd}/luv/library', words = { 'vim%.uv' } },
-      },
-    },
-  },
   require 'custom.plugins.lsp-config',
   require 'custom.plugins.conform',
   require 'custom.plugins.blink',
+  require 'custom.plugins.oil',
+  require 'custom.plugins.statuscol',
+  require 'custom.plugins.nvim-ufo',
 
   -- This is the selected colorscheme, change to the path of the luafile for the colorscheme you want to use.
   require 'custom.colorschemes.tokyonight',

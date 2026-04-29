@@ -152,6 +152,13 @@ vim.o.splitbelow = true
 vim.o.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
+vim.opt.fillchars = { foldopen = '', foldclose = '', foldsep = ' ' }
+
+-- Set the indent behaviour
+vim.o.tabstop = 4
+-- vim.o.softtabstop = 4
+-- vim.o.shiftwidth = 4
+
 -- Preview substitutions live, as you type!
 vim.o.inccommand = 'split'
 
