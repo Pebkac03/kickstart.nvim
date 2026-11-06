@@ -6,13 +6,15 @@ vim.pack.add { 'https://github.com/NMAC427/guess-indent.nvim' }
 require('guess-indent').setup {}
 vim.pack.add { 'https://github.com/lewis6991/gitsigns.nvim' }
 require('gitsigns').setup {
-	signs = {
-		add = { text = '+' },
-		change = { text = '~' },
-		delete = { text = '_' },
-		topdelete = { text = '‾' },
-		changedelete = { text = '~' },
-	},
+  ---@module 'gitsigns'
+  ---@type Gitsigns.config
+  signs = {
+    add = { text = '+' },
+    change = { text = '~' },
+    delete = { text = '_' },
+    topdelete = { text = '‾' },
+    changedelete = { text = '~' },
+  },
 }
 -- Highlight todo, notes, etc in comments
 vim.pack.add { 'https://github.com/folke/todo-comments.nvim' }
@@ -24,7 +26,7 @@ require 'custom.plugins.blink'
 -- Depends on Blink
 require 'custom.plugins.flutter-tools'
 -- LSP Plugins
-vim.pack.add {'https://github.com/b0o/schemastore.nvim'}
+vim.pack.add { 'https://github.com/b0o/schemastore.nvim' }
 require 'custom.plugins.lsp-config'
 require 'custom.plugins.conform'
 require 'custom.plugins.luasnip'
@@ -34,9 +36,6 @@ require 'custom.plugins.nvim-ufo'
 require 'custom.plugins.java'
 require 'custom.plugins.mini'
 require 'custom.plugins.treesitter'
-
-
-
 
 -- There are additional nvim-treesitter modules that you can use to interact
 -- with nvim-treesitter. You should go explore a few and see what interests you:
